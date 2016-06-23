@@ -1,0 +1,11 @@
+{
+    "project_path": "~/Sites/dev_framework/resources/scss/main.scss",
+	"output_path": "~/Sites/dev_framework/resources/css/main.css",
+	"options": {
+		"cache":         true,
+		"debug":         true,
+		"line-comments": true,
+		"line-numbers":  true,
+		"style":         "nested"
+	}
+}

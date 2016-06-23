@@ -1,0 +1,75 @@
+/* 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+----------------------------------------------------------------------------------------*/
+#container {
+	padding: $default-line-height;
+	margin: 0 auto; 
+	max-width: 60em;
+	}
+
+div.row {
+	width: 100%;
+	display: table;
+}
+
+div.row section, div.row aside {
+	display: table-cell;/* keep the all contained block elements lined up with the same height. */
+}
+div.row aside {
+	width: $text-base;
+}
+
+
+/* --- header --- */
+h1 {
+  font-size: 300%;
+}
+
+
+/* for 1 column layout */
+figure {
+	width: 60%; 
+	margin: 1em auto;
+}
+
+.social_media_widgets, section.row p, .source, section.row div {
+  width: 60%;
+}
+/* ----------------------------- */
+
+
+
+/*  ---------------------------
+    MARKER
+------------------------------- */  
+#container { background-color: #ecede1; }
+div.row section {background: yellow;}
+div.row aside {background: orange;}
+.social_media_widgets {	background: pink;}
+
+
+
+/* 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+----------------------------------------------------------------------------------------*/
+@media screen and (min-width: $default-width) and (max-width: 63.236em) {
+
+#container { width: 30em; }
+
+
+div.row, div.row section, div.row aside {
+	display: block; /* disable table display */
+	width: 100%;
+}
+
+
+.social_media_widgets, section.row p, .source, section.row div, figure {
+	width: 100%;
+}
+
+
+/*  ---------------------------
+    MARKER
+------------------------------- */  
+#container { background-color: #819227; }
+
+	
+}

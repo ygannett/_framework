@@ -1,0 +1,29 @@
+// -----------------------------------
+//		_site-variables.scss
+//		v.20160307
+// -------------------------------------- //
+
+$default-line-height: 1.618em;
+
+$default-padding: 0.809em;
+
+$default-width: 33em;
+
+$default-background: #fff;
+
+$default-font-color: #222;
+
+$default-serif-font-stack: Georgia, "Times New Roman", serif;
+
+$default-sans-serif-font-stack: Helvetica, Arial, sans-serif;
+
+/* 
+	column width
+-------------------------------------------- */
+
+/* -- unit -- */
+$text-base: 16em;	// 16 + 1 = 17
+
+$text-2col: $text-base * 2 + 1; // (16 + 1 + 16) + 1 = 35
+
+$text-3col: $text-base * 3 + 2 // (16 + 1 + 16 + 1 + 16) + 1 = 52

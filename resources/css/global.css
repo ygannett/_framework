@@ -1,0 +1,278 @@
+/* 
+	column width
+-------------------------------------------- */
+/* -- unit -- */
+/* 
+	column width
+-------------------------------------------- */
+/* -- unit -- */
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+/* line 42, ../scss/_site-global.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 51, ../scss/_site-global.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+/* line 58, ../scss/_site-global.scss */
+html {
+  overflow-y: scroll;
+  background: white;
+}
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+/* line 64, ../scss/_site-global.scss */
+img, embed, object, video {
+  max-width: 100%;
+}
+
+/* line 65, ../scss/_site-global.scss */
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video {
+  width: 100%;
+}
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* line 70, ../scss/_site-global.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.618em;
+  color: #222222;
+}
+
+/* line 77, ../scss/_site-global.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.809em;
+  line-height: 1em;
+}
+
+/* line 82, ../scss/_site-global.scss */
+section {
+  font-size: 1em;
+}
+
+/* line 86, ../scss/_site-global.scss */
+p, ul, ol, dl, blockquote {
+  font-size: 1em;
+  line-height: 1.618em;
+  margin-bottom: 1.618em;
+}
+
+/* line 93, ../scss/_site-global.scss */
+.row section p, .row section ul, .row section ol, .row section dl, .row section blockquote {
+  font-size: 1em;
+  max-width: 41em;
+                /*
+max-width: 33em;*/
+  /* Optimal width for long-form text */
+}
+
+/* line 101, ../scss/_site-global.scss */
+ul {
+  list-style-type: disc;
+  margin-left: 1.618em;
+}
+
+/* line 105, ../scss/_site-global.scss */
+ol {
+  list-style-type: decimal;
+  margin-left: 1.618em;
+}
+
+/* line 109, ../scss/_site-global.scss */
+nav ul, nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 114, ../scss/_site-global.scss */
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+/* line 118, ../scss/_site-global.scss */
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.2em;
+}
+/* line 123, ../scss/_site-global.scss */
+nav a, nav a:link, nav a:visited {
+  color: #865030;
+}
+/* line 126, ../scss/_site-global.scss */
+nav a:active, nav a:hover {
+  color: #865030;
+}
+
+/* line 131, ../scss/_site-global.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 132, ../scss/_site-global.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 133, ../scss/_site-global.scss */
+small {
+  font-size: 80%;
+}
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+/* line 137, ../scss/_site-global.scss */
+a, a:visited {
+  outline: none;
+  color: #439BBD;
+  text-decoration: underline;
+}
+
+/* line 138, ../scss/_site-global.scss */
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 139, ../scss/_site-global.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* line 144, ../scss/_site-global.scss */
+header, footer, .row {
+  clear: both;
+}
+
+/* line 148, ../scss/_site-global.scss */
+.accessibility {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 157, ../scss/_site-global.scss */
+section {
+  padding: 1em 0;
+}
+
+/* line 160, ../scss/_site-global.scss */
+.row section {
+  max-width: 33em;
+  /* Optimal width for long-form text */
+}
+
+/* --- header --- */
+/* line 165, ../scss/_site-global.scss */
+header .skip {
+  float: right;
+}
+
+/* line 169, ../scss/_site-global.scss */
+.social_media_widgets {
+  margin: 1em auto;
+}
+
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+/* line 178, ../scss/_site-global.scss */
+#container {
+  padding: 0.809em;
+  max-width: 33em;
+  margin: auto;
+}
+
+/* line 184, ../scss/_site-global.scss */
+aside {
+  width: 100%;
+}
+
+/*  ---------------------------
+    MARKER
+-------------------------------  */
+/* line 190, ../scss/_site-global.scss */
+#container {
+  background-color: #410583;
+}
+
+/* line 196, ../scss/_site-global.scss */
+head,
+nav,
+section,
+aside,
+footer,
+main {
+  background-color: #f6eefe;
+}
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+/* line 200, ../scss/_site-global.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+}
+
+/* line 201, ../scss/_site-global.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 202, ../scss/_site-global.scss */
+.ie6 .cf {
+  zoom: 1;
+}
